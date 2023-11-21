@@ -28,7 +28,7 @@ period_dct = {3: 'hour', 72: 'day'}
 if __name__ == "__main__":
     conf = SparkConf()
     conf.setMaster(
-        'spark://DESKTOP-I95HRMP.localdomain:12222').setAppName("Q2")
+        'spark://0.0.0.0:8080').setAppName("Q2")
     sc = SparkContext(conf=conf)
     spark = SparkSession(sc)
 
