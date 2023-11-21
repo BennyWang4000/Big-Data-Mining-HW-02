@@ -34,8 +34,7 @@ if __name__ == '__main__':
 
     conf = SparkConf()
     conf.setMaster(
-        'spark://localhost:12222').setAppName("Q4")
-    conf.setAppName("Q1")
+        'spark://0.0.0.0:8080').setAppName("Q4")
     sc = SparkContext(conf=conf)
     spark = SparkSession(sc)
 

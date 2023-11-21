@@ -29,7 +29,7 @@ if __name__ == '__main__':
 
     conf = SparkConf()
     conf.setMaster(
-        'spark://DESKTOP-I95HRMP.localdomain:12222').setAppName("Q1")
+        'spark://0.0.0.0:8080').setAppName("Q1")
     sc = SparkContext(conf=conf)
     spark = SparkSession(sc)
 
